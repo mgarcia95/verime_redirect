@@ -1,5 +1,20 @@
 {
-  "devDependencies": {
-    "cypress": "^11.0.1"
-  }
+"name": "cypress_dashboard",
+"version": "1.0.0",
+"description": "",
+"main": "index.js",
+"scripts": {
+  "cy_dashboard": "cypress run --record --key e615cfe9-10f9-4021-a923-0c64fc26a103",
+  "cleanup": "rm -fr cypress/reports",
+  "merge_reports": "mochawesome-merge cypress/reports/mochawesome-report/*.json > output.json",
+  "mochawesome_report": "marge --reportDir cypress/reports/mochawesome-html-report -t Cypress_Test_Report -p Cypress_HMTL_Report -f Cypress_HMTL_Report --charts true output.json",
+  "cy:report": "npm run cleanup && npm run cy_dashboard && npm run merge_reports && npm run mochawesome_report"
+},
+"author": "Manuel",
+"license": "ISC",
+"devDependencies": {
+  "cypress": "^11.0.1",
+  "mocha": "^10.1.0",
+  "mochawesome": "^7.1.3"
+}
 }
