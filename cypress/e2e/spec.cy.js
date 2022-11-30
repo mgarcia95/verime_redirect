@@ -5,7 +5,7 @@ describe("Verime", () => {
   beforeEach(() => {
 
       //Visit landing page and click Launch button
-      cy.visit("http://192.168.200.77/verime_redirect");
+      cy.visit("http://192.168.200.77:80/verime_redirect");
       cy.url().should("include","/verime.net/ageverify/indexdemo_nocaptcha.php");
 
       //Define aliases here
