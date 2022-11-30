@@ -4,8 +4,8 @@
 require("utils.php");
 
 // SPECIFY AGE-VERIFIED AND NOT-AGE-VERIFIED URLS BELOW
-$AGE_VERIFIED_URL = "http://127.0.0.1/verime_redirect/ageverified.php?av=true";
-$NOT_AGE_VERIFIED_URL = "http://127.0.0.1/verime_redirect/NOTageverified.php?av=false";
+$AGE_VERIFIED_URL = "http://192.168.200.77/verime_redirect/ageverified.php?av=true";
+$NOT_AGE_VERIFIED_URL = "http://192.168.200.77/verime_redirect/NOTageverified.php?av=false";
 
 // Construct Query String
 // Add Any Additional Parameters here (e.g. user id etc)
